@@ -6,7 +6,7 @@ import '../style/app.scss';
 
 @Component({
   selector: 'my-app', // <my-app></my-app>
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.pug',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {

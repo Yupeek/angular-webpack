@@ -52,7 +52,7 @@ module.exports = function makeWebpackConfig() {
     path: root('dist'),
     publicPath: isProd ? '/' : 'http://localhost:8080/',
     filename: isProd ? 'js/[name].[hash].js' : 'js/[name].js',
-    chunkFilename: isProd ? '[id].[has].chunk.js' : '[id].chunk.js'
+    chunkFilename: isProd ? '[id].[hash].chunk.js' : '[id].chunk.js'
   };
 
   /**
@@ -169,7 +169,7 @@ module.exports = function makeWebpackConfig() {
          */
         test: /\.html$/,
         exclude: root('src', 'public'),
-        use: 'raw-loader'
+        use: ['raw-loader', 'html-loader']
       },
       {
         /**

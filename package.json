@@ -22,7 +22,9 @@
     "docs": "typedoc --options typedoc.json src/app/app.component.ts",
     "start": "npm run server",
     "start:hmr": "npm run server -- --hot",
-    "postinstall": "npm run webdriver-update"
+    "postinstall": "npm run webdriver-update",
+    "compodocs": "node_modules/.bin/compodoc -p tsconfig.json -d docs",
+    "serve-compodocs": "node_modules/.bin/compodoc -s -d docs"
   },
   "keywords": [],
   "author": "",
@@ -53,6 +55,7 @@
     "awesome-typescript-loader": "^3.1.2",
     "canonical-path": "0.0.2",
     "codelyzer": "^2.1.1",
+    "compodoc": "0.0.41",
     "concurrently": "^3.2.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",

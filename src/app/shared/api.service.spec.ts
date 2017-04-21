@@ -7,7 +7,7 @@ describe('Api Service', () => {
     TestBed.configureTestingModule({providers: [ApiService]});
   });
 
-  it('should ...', inject([ApiService], (api) => {
+  it('should have the right title', inject([ApiService], (api) => {
     expect(api.title).toBe('Yupeek angular2');
   }));
 });

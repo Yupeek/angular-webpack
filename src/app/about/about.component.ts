@@ -5,6 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.pug',
   styleUrls: ['./about.component.scss']
 })
+
+/**
+ * class AboutComponent
+ */
 export class AboutComponent implements OnInit {
 
   constructor() {
